@@ -30,6 +30,9 @@ p, a {
     text-decoration: none;
 
 }
+h1,h2,h3,h4,h5,h6 {
+    font-family: OpenSansBold;
+}
 
 ul li, ol li {
     list-style: none;
@@ -130,8 +133,11 @@ span.spbottom {
 .col-5 {
     flex: 0 0 20%;
 }
+.col-12 {
+    flex: 0 0 100%;
+}
 
-.col-2,.col-3,.col-4,.col-5,.nav-col-4,.nav-col-6{
+.col-2,.col-3,.col-4,.col-5,.col-12,.nav-col-4,.nav-col-6{
     padding: 15px;
     box-sizing: border-box;
     position: relative;
@@ -337,3 +343,131 @@ span.spbottom {
 .joinsbooks img {
     width: 85%;
 }
+
+
+  .uniqueW {
+    width: 130px !important;
+  }
+
+  /* .splide__slide img {
+    width: 130px;
+  } */
+  header section.splide {
+    padding: 3.4rem 0;
+  }
+  header .splide__arrow--next {
+    right: 250px !important;
+    }
+    header .splide__arrow--prev {
+    left: 210px !important;
+    }
+    header .splide__list {
+        align-items: center !important;
+    }
+    header .splide__arrow {
+        border: 2px solid black !important;
+        background: transparent !important;
+    }
+
+    .sec2-Topnotch {
+        padding: 3rem 0;
+    }
+
+    /* sec2-about */
+
+    .sec2-Topnotch h3 span {
+        color: #7e80a2;
+    }
+    .sec2-Topnotch h3 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .Topnotch p{
+        padding: 1rem 3rem;
+        text-align: center;
+    }
+
+
+    /* sec3-bestseller */
+
+    .sec3-bestseller {
+        background-image: url("../images/bestseller.png");
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .sec3-bestseller .seller-bg {
+        background-color: #7e80a2;
+        height: auto;
+        padding: 22px;
+    }
+    .sec3-bestseller .row {
+        padding: 4rem 0;
+    }
+
+    .seller-bg h3 {
+        font-size: 48px;
+        color: #fff;
+    }
+    .seller-bg p {
+        color: #fff;
+    }
+    .sec3-bestseller .navcta .btn {
+        background-color: #181818;
+    }
+    
+    .sec3-bestseller .navcta .btn2 {
+        background-color: #030047;
+    }
+    .sec3-bestseller .navcta .btn2::before {
+        background-color: #747474;
+    }
+
+    .sec3-bestseller .navcta {
+        padding-top: 30px;
+    }
+
+    .plant {
+        position: absolute;
+        right: 96px;
+        bottom: 139px;
+    }
+    
+    .plantbooks {
+        margin-top: 14px;
+    }
+    .plantbooks img{
+        margin-bottom: -120px;
+        margin-right: -45px;
+    }
+    .sec3-bestseller .navcta .btn {
+        margin-left: 0;
+    }
+    .sec3-bestseller .navcta :nth-child(2) {
+        margin-left: 25px;
+    }
+
+    /* .sec4-about */
+
+    .sec4-about {
+        padding: 3rem 0;
+        
+    }
+
+    .sec4-about h3{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sec4-about span{
+        color: #7e80a2;
+    }
+    .sec4-about div p{
+        text-align: center;
+        width: 50%;
+    }
+    .sec4-about .row {
+        display: flex;
+        justify-content: center;
+        
+    }
