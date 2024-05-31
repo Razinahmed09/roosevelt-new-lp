@@ -80,7 +80,8 @@ header .sec1-banner {
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding: 2rem 0;
     bottom: 0;
 }
 
@@ -113,7 +114,10 @@ span.spbottom {
 }
 .container-fluid {
     width: 100%;
-    margin: 0 2rem;
+    /* margin: 0 2rem; */
+}
+.container-fluid .row {
+    padding: 0 1rem ;
 }
 
 .row {
@@ -141,6 +145,9 @@ span.spbottom {
 .col-5 {
     flex: 0 0 20%;
 }
+.col-8 {
+    flex: 0 0 80%;
+}
 .col-12 {
     flex: 0 0 100%;
 }
@@ -151,7 +158,7 @@ span.spbottom {
     flex: 0 0 30%;
 }
 
-.col-2,.col-3,.col-4,.col-5,.col-12,.nav-col-4,.nav-col-6,.unique_col_7,.unique_col_3{
+.col-2,.col-3,.col-4,.col-5,.col-12,.col-8,.nav-col-4,.nav-col-6,.unique_col_7,.unique_col_3{
     padding: 15px;
     box-sizing: border-box;
     position: relative;
@@ -166,6 +173,9 @@ span.spbottom {
 
 .sec1-banner nav {
     padding: 1rem 0;
+}
+.logo img {
+    width: 100%;
 }
 
 .btn {
@@ -383,6 +393,10 @@ span.spbottom {
   /* .splide__slide img {
     width: 130px;
   } */
+  .splide__slide {
+    display: flex;
+    justify-content: center;
+  }
   header section.splide {
     padding: 3.4rem 0;
   }
@@ -403,7 +417,59 @@ span.spbottom {
     .sec2-Topnotch {
         padding: 3rem 0;
     }
-
+    #splide3 .imgBox{
+        background: white;
+        padding: 15px;
+        border-left: 4px solid black;
+        margin-left: 25px;
+        margin-top: -84px;
+        z-index: 5;
+        position: relative;
+    }
+    #splide3 .imgBox h4 {
+        font-size: 25px;
+    }
+    #splide3 .imgBox p {
+        font-size: 14px;
+    }
+    .sec2-Topnotch .container-fluid .splide__arrow--prev svg {
+        fill: white;
+        width: 32px;
+        height: 32px;
+    }  
+    .sec2-Topnotch .container-fluid .splide__arrow.splide__arrow--next { 
+        display: none;
+    }
+    .sec2-Topnotch .container-fluid .splide__arrow.splide__arrow--prev { 
+        background: black;
+        color: white;
+        width: 70px;
+        height: 70px;
+        margin-left: -33px;
+    }
+    .sec2-Topnotch .container-fluid {
+        width: 90%;
+        margin-left: auto;
+        padding: 40px 0px;
+    }
+    .splide_slide_box {
+        padding: 15px;
+    }
+.testi-box .icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testi-box .icon .fa-quote-right {
+    color: white;
+    font-size: 20px;
+    background-color: #030047;
+    border-radius: 50%;
+    padding: 10px;
+}
+.testi-box .icon {
+    color: #8587a7;
+}
     /* sec2-about */
 
     .sec2-Topnotch h3 span {
@@ -431,9 +497,9 @@ span.spbottom {
     .sec3-bestseller .seller-bg {
         background-color: #7e80a2;
         height: auto;
-        padding: 22px;
+        /* padding: 22px; */
     }
-    .sec3-bestseller .row {
+    .sec3-bestseller .pRow{
         padding: 4rem 0;
     }
 
@@ -471,11 +537,16 @@ span.spbottom {
     .sec3-bestseller .navcta {
         padding-top: 30px;
     }
+    
+    .plantsParent {
+        display: flex;
+        justify-content: end;
+    }
 
     .plant {
         position: absolute;
         right: 96px;
-        bottom: 122px;
+        bottom: 111px;
        
     }
     .plantbooks img {
@@ -505,7 +576,7 @@ span.spbottom {
     
     
     .plantbooks {
-        margin-top: 14px;
+        margin-top: 30px;
     }
     .plantbooks img{
         margin-bottom: -120px;
@@ -718,7 +789,7 @@ span.spbottom {
         font-family: PoppinsBold;
      }
      .learn-content {
-        padding-left: 1rem;
+        padding-left: 2rem;
      }
      .learnbook img {
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -728,7 +799,7 @@ span.spbottom {
      /* sec7-testi */
 
      .sec7-testi {
-        padding: 3rem 0;
+        padding: 3rem 1rem;
      }
      .sec7-testi h4 {
         font-size: 25px ;
@@ -739,9 +810,62 @@ span.spbottom {
      }
      .sec7-testi h3 {
         font-size: 35px;
-
      }
+     .testi-heading {
+        padding: 0rem 0rem 1.5rem 3rem;
+     }
+     .testi-box {
+        background-color: #fff;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        height: auto;
+        width: 430px;
+        padding: 50px;
+     }
+     .sec7-testi .item .profile {
+        display: flex;
+        padding: 15px 0;
+        }
+        .sec7-testi .item .profile .information {
+            padding-left: 10px;
+            /* margin-bottom: 12px; */
+            padding-top: 8px;
+        }
+     .sec7-testi .item .profile .information p {
+        font-size: 17px;
+        margin: 0px auto 0px;
+        color: black;
+        font-weight: 900;
+        line-height: 1;
+    }
+    .sec7-testi .item .profile .information span {
+        font-size: 13px;
+        font-family: PoppinsRegural;
+    }
+    
+     .sec7-testi .sec5-testi .item {
+        background: #fff;
+        padding: 50px 30px;
+        border: 1px solid gray;
+        width: 100%;
+        height: 400px;
+    }
 
+    .sec7-testi .item .profile img {
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    .sec7-testi .item>p {
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 1.6em;
+        display: block;
+        z-index: 2;
+        font-style: italic;
+        color: black;
+        text-align: left;
+    }
      /* sec7-testi */
 
      .sec8-footer {
@@ -810,4 +934,344 @@ span.spbottom {
         align-items: center;
         padding: 10px 0px;
         color: #fff;
+    }
+
+
+    @media screen and (min-width: 1200px) and (max-width: 1400px) {
+        .container {
+            max-width: 1140px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .nav-col-4 {
+            flex: 0 0 40%;
+        }
+        .nav-col-6 {
+            flex: 0 0 60%;
+        }
+        
+        .col-2 {
+            flex: 0 0 50%;
+        }
+        .col-3 {
+            flex: 0 0 50%;
+        }
+        .col-4 {
+            flex: 0 0 25%;
+        }
+
+        .banner-heading h1 {
+            font-size: 50px;
+        }
+        .sec4-about .row2 {
+            margin-top: -78px;
+        }
+        .banner-content .row {
+            padding: 3rem 0 4rem 0;
+        }
+        .container-fluid .row {
+            padding: 0;
+            align-items: center;
+        }
+        .learn-content {
+            padding-left: 1rem;
+        }
+        .learnbook img {
+            margin-left: 0;
+        }
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .col-4 {
+            flex: 0 0 33.33%;
+        }
+        .col-3 {
+            flex: 0 0 50%;
+        }
+        .sec3-bestseller .nav-col-4 {
+            flex: 0 0 50%;
+        }
+        .sec3-bestseller .nav-col-6 {
+            flex: 0 0 50%;
+        }
+        .logo img {
+            width: 85%;
+        }
+        .btn {
+            padding: 14px 10px;
+            font-size: 14px;
+        }
+        .banner-heading h1 {
+            font-size: 50px;
+        }
+        .sec4-about .row2 {
+            margin-top: -78px;
+        }
+        .banner-content .row {
+            padding: 3rem 0 4rem 0;
+        }
+        .container-fluid .row {
+            padding: 0;
+            align-items: center;
+        }
+        .learn-content {
+            padding-left: 1rem;
+        }
+        .learnbook img {
+            margin-left: 0;
+            width: 100%;
+        }
+        .cards-inner {
+            height: auto;
+        }
+        .banner-heading h1 .uniqueH1 {
+            font-size: 35px;
+        }
+        .joinsbooks img {
+            bottom: -56px;
+        }
+        header .splide__arrow--next {
+            right: 85px !important;
+        }
+        header .splide__arrow--prev {
+            left: 60px !important;
+        }
+        .seller-bg h3 {
+            font-size: 45px;
+        }
+        .sec4-about .row {
+            align-items: center;
+        }
+        .sec4-about .row2 {
+            margin-top: -140px;
+        }
+        .sec6-Ourtabs .horizontal_tabs_sec .tablinks {
+            padding: 10px 28px;
+        }
+        .plantbooks img {
+            margin-bottom: -53px;
+            /* margin-right: -45px; */
+        }
+        .plantbooks {
+            margin-top: 100px;
+        }
+        .plant {
+            position: absolute;
+            right: 116px;
+            bottom: 107px;
+        }
+        .plantsParent {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .col-2 {
+            flex: 0 0 100%;
+        }
+        .nav-col-4 {
+            flex: 0 0 30%;
+        }
+        .nav-col-6 {
+            flex: 0 0 70%;
+        }
+        .sec3-bestseller .nav-col-4 {
+            flex: 0 0 100%;
+        }
+        .sec3-bestseller .nav-col-6 {
+            flex: 0 0 100%;
+        }
+        .sec7-learn .nav-col-6, .sec7-learn .nav-col-4 {
+            flex: 0 0 100%;
+        }
+        .sec7-learn .row {
+            padding: 0;
+        }
+        .learnbook {
+            display: flex;
+            justify-content: center;
+        }
+        .learnbook img {
+            margin-left: 0;
+        }
+        .cards-inner {
+            height: 260px;
+            padding: 14px 20px;
+        }
+        header .splide__arrow--prev {
+            left: 60px !important;
+        }
+        header .splide__arrow--next {
+            right: 70px !important;
+        }
+        .logo img {
+            width: 100%;
+        }
+        .btn {
+            padding: 14px 10px;
+            font-size: 14px;
+        }
+        .banner-content .row {
+            padding: 0rem 0 4rem 0;
+        }
+        .banner-heading h1 {
+            font-size: 45px;
+        }
+        .banner-heading h1 .uniqueH1 {
+            font-size: 40px;
+        }
+        .joinsbooks img {
+            width: 32%;
+        }
+        .banner-content .card {
+            width: 70%;
+        }
+        .parentForm {
+            display: flex;
+            justify-content: center;
+        }
+        .sec1-banner .navmail {
+            height: 40px;
+            width: 40px;
+        }
+        .leftnav a {
+            font-size: 13px;
+        }
+        .navcta .btn {
+            margin-left: 15px;
+        }
+        span.sptop {
+            width: 335px;
+        }
+        .plantsParent {
+            justify-content: center;
+        }
+        .plantbooks img {
+            margin-bottom: -70px;
+        }
+        .plantbooks {
+            margin-top: 0px;
+        }
+        .plant img {
+            width: 75%;
+        }
+        .sec6-Ourtabs .horizontal_tabs_sec .tablinks {
+            padding: 10px 8px;
+        }
+        .plant {
+            position: absolute;
+            right: 210px;
+            bottom: 85px;
+        }
+    }
+
+    @media (min-width: 300px) and (max-width: 767px) {
+        .container {
+            max-width: 540px;
+            margin: 0 auto;
+        }
+
+        .col-2 {
+            flex: 0 0 100%;
+        }
+        .col-3 {
+            flex: 0 0 50%;
+        }
+        .nav-col-4 {
+            flex: 0 0 50%;
+        }
+        .nav-col-6 {
+            flex: 0 0 50%;
+        }
+        .sec3-bestseller .nav-col-4 {
+            flex: 0 0 100%;
+        }
+        .sec3-bestseller .nav-col-6 {
+            flex: 0 0 100%;
+        }
+        .sec7-learn .nav-col-6, .sec7-learn .nav-col-4 {
+            flex: 0 0 100%;
+        }
+        .banner-heading h1 {
+            font-size: 40px;
+        }
+        .banner-heading h1 .uniqueH1 {
+            font-size: 30px;
+        }
+        .banner-content .row {
+            padding: 0rem 0 3rem 0;
+        }
+        .btn {
+            padding: 14px 10px;
+            font-size: 14px;
+        }
+        .sec1-banner .leftnav {
+            display: block;
+        }
+        .sec1-banner .leftnav .flex{
+            display: block;
+        }
+        .sec1-banner .leftnav .navcta {
+            display: flex;
+        }
+        .sec1-banner nav .row {
+            align-items: baseline;
+        }
+        .sec1-banner nav .navcta .btn {
+            margin-left: 0;
+        }
+        .sec1-banner nav .navcta .btn2 {
+            margin-left: 10px;
+        }
+        .emailParent {
+            display: flex;
+        }
+        .navmail {
+            width: 40px !important;
+            height: 40px !important;
+        }
+        .plantsParent {
+            justify-content: center;
+        }
+        .plantbooks img {
+            margin-bottom: -70px;
+        }
+        .plantbooks {
+            margin-top: 0px;
+        }
+        .plant img {
+            width: 75%;
+        }
+        .plant {
+            position: absolute;
+            right: 118px;
+            bottom: 89px;
+        }
+        .seller-bg h3 {
+            font-size: 36px;
+            padding: 10px 0;
+        }
+        .sec6-Ourtabs .horizontal_tabs_sec .tablinks {
+            padding: 6px 8px;
+        }
+        .cards-inner {
+            height: 226px;
+        }
+        .learnbook {
+            display: flex;
+            justify-content: center;
+        }
+        .learnbook img {
+            margin-left: 0;
+        }
     }

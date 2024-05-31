@@ -9,8 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <style>
+        /* Add any custom styles here */
+        .splide__slide img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,17 +31,18 @@
                 <div class="container">
                     <div class="row items-center">
                         <div class="nav-col-4">
-                            <div>
+                            <div class="logo">
                                 <img src="./images/logo.png" alt="">
                             </div>
                         </div>
                         <div class="nav-col-6">
                             <div class="flex leftnav">
-                                <div class="flex ">
+                                <div class="flex emailParent">
                                     <span class="navmail">
                                         <i class="fa fa-envelope-o"></i>
                                     </span>
-                                    <a href="mailto:info@rooseveltwrites.com">Email us : <br> info@rooseveltwrites.com</a>
+                                    <a href="mailto:info@rooseveltwrites.com">Email us : <br>
+                                        info@rooseveltwrites.com</a>
                                 </div>
                                 <div class="flex navcta">
                                     <div>
@@ -93,7 +104,7 @@
                             </div>
                         </div>
                         <div class="col-2">
-                            <div>
+                            <div class="parentForm">
                                 <div class="card">
                                     <h2>Create Your Free Account </h2>
                                     <hr>
@@ -154,7 +165,7 @@
         </section>
 
         <!-- slider  -->
-        <section class="splide" id="thumbnail-carousel" aria-label="Basic Structure Example">
+        <section class="splide" id="splide1" aria-label="Basic Structure Example">
             <div class="container">
                 <div class="splide__track">
                     <ul class="splide__list">
@@ -183,6 +194,70 @@
                     publications Our team of committed and ambitious readers.</p>
             </div>
         </div>
+        <div class="container-fluid">
+            <div id="splide3" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="splide_slide_box">
+                                <div>
+                                    <img src="./images/topslide1.png" alt="">
+                                </div>
+                                <div class="imgBox">
+                                    <h4>Book Writing 
+                                        Services</h4>
+                                        <p>At Roosevelt Writes, we breathe life into your ideas by writing compelling stories that captivate readers We offer. 
+                                            comprehensive Book writing services 
+                                            tailored to propel your unique voice and align with your desired genre and book type.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide_slide_box">
+                                <div>
+                                    <img src="./images/topslide2.png" alt="">
+                                </div>
+                                <div class="imgBox">
+                                    <h4>Book Editing
+                                        Services</h4>
+                                        <p>At Roosevelt Writes, we breathe life into your ideas by writing compelling stories that captivate readers We offer. 
+                                            comprehensive Book writing services 
+                                            tailored to propel your unique voice and align with your desired genre and book type.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide_slide_box">
+                                <div>
+                                    <img src="./images/topslide3.png" alt="">
+                                </div>
+                                <div class="imgBox">
+                                    <h4>Book Publishing 
+                                        Services</h4>
+                                        <p>At Roosevelt Writes, we breathe life into your ideas by writing compelling stories that captivate readers We offer. 
+                                            comprehensive Book writing services 
+                                            tailored to propel your unique voice and align with your desired genre and book type.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide_slide_box">
+                                <div>
+                                    <img src="./images/topslide4.png" alt="">
+                                </div>
+                                <div class="imgBox">
+                                    <h4>Book Formating 
+                                        Services</h4>
+                                        <p>At Roosevelt Writes, we breathe life into your ideas by writing compelling stories that captivate readers We offer. 
+                                            comprehensive Book writing services 
+                                            tailored to propel your unique voice and align with your desired genre and book type.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </section>
     <!-- section-2 -->
@@ -191,32 +266,36 @@
     <!-- section-3 -->
     <section class="sec3-bestseller">
         <div class="container">
-            <div class="row">
+            <div class="row pRow">
                 <div class="col-12">
                     <div class="seller-bg">
-                        <div class="flex">
-                            <div>
-                                <h3>Turn Your Manuscript into a Bestseller!</h3>
-                                <p>At Roosevelt Writes, you’ll find the tools and support you need to make a lasting
-                                    impact through your book.</p>
-                                <div class="flex navcta">
-                                    <div>
-                                        <a class="btn" href="#">Get Started</a>
-                                    </div>
-                                    <div>
-                                        <a class="btn btn2" href="#">Live Chat</a>
-                                    </div>
-                                    <div class="Cta">
-                                        <a href="tel:+703 570-5762">Call Us : +703 570-5762</a>
+                        <div class="row">
+                            <div class="nav-col-6">
+                                <div>
+                                    <h3>Turn Your Manuscript into a Bestseller!</h3>
+                                    <p>At Roosevelt Writes, you’ll find the tools and support you need to make a lasting
+                                        impact through your book.</p>
+                                    <div class="flex navcta">
+                                        <div>
+                                            <a class="btn" href="#">Get Started</a>
+                                        </div>
+                                        <div>
+                                            <a class="btn btn2" href="#">Live Chat</a>
+                                        </div>
+                                        <div class="Cta">
+                                            <a href="tel:+703 570-5762">Call Us : +703 570-5762</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <div class="plant">
-                                    <img src="./images/plant.png" alt="">
-                                </div>
-                                <div class="plantbooks">
-                                    <img src="./images/plantsbook.png" alt="">
+                            <div class="nav-col-4">
+                                <div class="plantsParent">
+                                    <div class="plant">
+                                        <img src="./images/plant.png" alt="">
+                                    </div>
+                                    <div class="plantbooks">
+                                        <img src="./images/plantsbook.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -224,7 +303,10 @@
                 </div>
             </div>
         </div>
-        </div>
+
+
+
+
     </section>
 
     <!-- section-3 -->
@@ -547,6 +629,140 @@
                 <h3><span> Hear What </span>Others <br>
                     Are Saying</h3>
             </div>
+            <div id="splide2" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="testi-box">
+                                <div class="item">
+                                    <div class="profile">
+                                        <img src="./images/testiimg.png" alt="tesiimg">
+                                        <div class="information">
+
+                                            <p>Emily s.</p>
+                                            <div class="stars">
+                                            <span>CEo of (Flaxstudio)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        "Roosevelt Writes exceeded my expectations at every turn. They transformed my
+                                        manuscript into a captivating Book that resonated.
+                                        with readers far and wide. It's a highly recommended service!"
+                                    </p>
+                                    <div class="icon">
+                                        <div>
+                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="testi-box">
+                                <div class="item">
+                                    <div class="profile">
+                                        <img src="./images/testiimg.png" alt="tesiimg">
+                                        <div class="information">
+
+                                            <p>Emily s.</p>
+                                            <div class="stars">
+                                            <span>CEo of (Flaxstudio)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        "Roosevelt Writes exceeded my expectations at every turn. They transformed my
+                                        manuscript into a captivating Book that resonated.
+                                        with readers far and wide. It's a highly recommended service!"
+                                    </p>
+                                    <div class="icon">
+                                        <div>
+                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="testi-box">
+                                <div class="item">
+                                    <div class="profile">
+                                        <img src="./images/testiimg.png" alt="tesiimg">
+                                        <div class="information">
+
+                                            <p>Emily s.</p>
+                                            <div class="stars">
+                                            <span>CEo of (Flaxstudio)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        "Roosevelt Writes exceeded my expectations at every turn. They transformed my
+                                        manuscript into a captivating Book that resonated.
+                                        with readers far and wide. It's a highly recommended service!"
+                                    </p>
+                                    <div class="icon">
+                                        <div>
+                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="testi-box">
+                                <div class="item">
+                                    <div class="profile">
+                                        <img src="./images/testiimg.png" alt="tesiimg">
+                                        <div class="information">
+
+                                            <p>Emily s.</p>
+                                            <div class="stars">
+                                            <span>CEo of (Flaxstudio)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        "Roosevelt Writes exceeded my expectations at every turn. They transformed my
+                                        manuscript into a captivating Book that resonated.
+                                        with readers far and wide. It's a highly recommended service!"
+                                    </p>
+                                    <div class="icon">
+                                        <div>
+                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
     <!-- sec-testimonials -->
@@ -578,8 +794,10 @@
                 <div class="col-2">
                     <div class="Socials-icons">
                         <a href="tel:+703 570-5762"><i class="fa fa-phone"></i> 703 570-5762</a>
-                        <a href="mailto:info@rooseveltwrites.com"><i class="fa fa-envelope"></i>info@rooseveltwrites.com</a>
-                        <a href="javascipt:;"><i class="fa fa-location-arrow" ></i>12509 ERROLL LN <br> BRISTOW, VA 20136</a>
+                        <a href="mailto:info@rooseveltwrites.com"><i
+                                class="fa fa-envelope"></i>info@rooseveltwrites.com</a>
+                        <a href="javascipt:;"><i class="fa fa-location-arrow"></i>12509 ERROLL LN <br> BRISTOW, VA
+                            20136</a>
 
                     </div>
                 </div>
@@ -595,7 +813,79 @@
     </section>
     <!-- footer -->
 
+
+
+
+    <!-- Splide JS -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#splide1', {
+                type: 'loop',
+                perPage: 6,
+                autoplay: true,
+                pagination: false,
+                breakpoints: {
+            640: {
+              perPage: 1,
+        
+            },
+            767: {
+              perPage: 2,
+          
+            },
+            1024: {
+              perPage: 3,
+             
+            },
+          },
+            }).mount();
+
+            new Splide('#splide2', {
+                type: 'loop',
+                perPage: 3,
+                autoplay: true,
+                pagination: false,
+                arrows: false,
+                breakpoints: {
+                640: {
+                perPage: 1,
+            
+                },
+                767: {
+                perPage: 2,
+            
+                },
+                1024: {
+                perPage: 3,
+                
+                },
+          },
+            }).mount();
+            new Splide('#splide3', {
+                type: 'loop',
+                perPage: 4,
+                autoplay: true,
+                pagination: false,
+                arrows: true,
+                breakpoints: {
+                640: {
+                perPage: 1,
+            
+                },
+                767: {
+                perPage: 2,
+            
+                },
+                1024: {
+                perPage: 3,
+                
+                },
+            },
+            }).mount();
+        });
+    </script>
+
     <script src="./js/swiper.js"></script>
 </body>
 
