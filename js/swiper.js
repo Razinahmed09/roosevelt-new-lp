@@ -6,3 +6,14 @@ function openCity(e, t) {
   for (o = 0, s = document.getElementsByClassName("tablinks"); o < s.length; o++) s[o].className = s[o].className.replace(" active", "");
   (document.getElementById(t).style.display = "block"), (e.currentTarget.className += " active");
 }
+// openCity();
+
+const images = document.querySelectorAll(".joinsbooks img");
+images.forEach((e) => {
+    e.addEventListener("mouseenter", () => {
+        e.style.animationIterationCount = "infinite";
+    }),
+        e.addEventListener("mouseleave", () => {
+            e.style.animationIterationCount = "1";
+        });
+})

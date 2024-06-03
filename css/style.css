@@ -23,6 +23,21 @@ body{
 	position: relative;
 
 }
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #7e80a2;
+    /* outline: 1px solid #030047; */
+    border-radius: 10px;
+
+  }
 
 p, a {
     font-family: PoppinsRegural;
@@ -83,6 +98,7 @@ header .sec1-banner {
     height: auto;
     padding: 2rem 0;
     bottom: 0;
+    overflow: hidden;
 }
 
 span.sptop {
@@ -175,7 +191,7 @@ span.spbottom {
     padding: 1rem 0;
 }
 .logo img {
-    width: 100%;
+    width: 70%;
 }
 
 .btn {
@@ -378,13 +394,39 @@ span.spbottom {
     right: 0px;
     bottom: -52px;
 } */
+
+ .joinsbooks {
+    position: relative;
+ }
 .joinsbooks img {
     width: 23%;
     position: absolute;
     right: 0;
     bottom: -30px;
-}
+    /* width: auto; */
+    animation-name: rotateX;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+    overflow: hidden;
 
+    animation-direction: alternate;
+}
+.joinsbooks img:hover{
+    animation-name: rotateX;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    overflow: hidden;
+}
+@keyframes rotateX {
+    0% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
 
   .uniqueW {
     width: 130px !important;
@@ -416,6 +458,9 @@ span.spbottom {
 
     .sec2-Topnotch {
         padding: 3rem 0;
+    }
+    .sec2-Topnotch .splide__slide img {
+        width: 100%;
     }
     #splide3 .imgBox{
         background: white;
@@ -798,6 +843,10 @@ span.spbottom {
 
      /* sec7-testi */
 
+     .sec7-testi .splide__slide {
+        padding: 15px;
+     }
+
      .sec7-testi {
         padding: 3rem 1rem;
      }
@@ -904,6 +953,9 @@ span.spbottom {
         margin-left: 10px;
     }
 
+    .sec8-footer input::placeholder, .sec8-footer textarea::placeholder{
+        color: #fff;
+    }
     .main-footer {
         padding: 2rem 0;
     }
@@ -914,6 +966,7 @@ span.spbottom {
     .main-footer h4 {
      font-family:'OpenSansSemi' ;
      text-align: center;
+     padding: 0 15px;
     }
 
     .Socials-icons a i {
@@ -936,6 +989,22 @@ span.spbottom {
         color: #fff;
     }
 
+
+    @media screen and (min-width: 1400px) and (max-width: 1600px) {
+        
+    }
+    @media screen and (min-width: 1400px) and (max-width: 1900px) {
+        header .splide__arrow--next {
+            right: 40px !important;
+        }
+        header .splide__arrow--prev {
+            left: 40px !important;
+        }
+        .cards-inner {
+            height: 277px;
+        }
+
+    }
 
     @media screen and (min-width: 1200px) and (max-width: 1400px) {
         .container {
@@ -978,6 +1047,12 @@ span.spbottom {
         }
         .learnbook img {
             margin-left: 0;
+        }
+        header .splide__arrow--next {
+            right: 40px !important;
+        }
+        header .splide__arrow--prev {
+            left: 40px !important;
         }
     }
 
@@ -1213,19 +1288,21 @@ span.spbottom {
         }
         .btn {
             padding: 14px 10px;
-            font-size: 14px;
+            font-size: 13px;
         }
         .sec1-banner .leftnav {
             display: block;
         }
-        .sec1-banner .leftnav .flex{
-            display: block;
+        .sec1-banner .leftnav .flex {
+            display: flex;
+            justify-content: end;
         }
         .sec1-banner .leftnav .navcta {
             display: flex;
         }
         .sec1-banner nav .row {
-            align-items: baseline;
+            align-items: normal;
+            margin-top: -16px;
         }
         .sec1-banner nav .navcta .btn {
             margin-left: 0;
@@ -1234,7 +1311,16 @@ span.spbottom {
             margin-left: 10px;
         }
         .emailParent {
-            display: flex;
+            margin-bottom: 16px;
+        }
+        .joinsbooks img {
+            right: 24px;
+        }
+        header .splide__arrow--next {
+            right: 65px !important;
+        }
+        header .splide__arrow--prev {
+            left: 65px !important;
         }
         .navmail {
             width: 40px !important;
@@ -1258,11 +1344,19 @@ span.spbottom {
             bottom: 89px;
         }
         .seller-bg h3 {
-            font-size: 36px;
+            font-size: 32px;
             padding: 10px 0;
         }
+        .sec5-unlock h2 {
+            font-size: 32px; 
+        }
         .sec6-Ourtabs .horizontal_tabs_sec .tablinks {
-            padding: 6px 8px;
+            padding: 2px 8px;
+            margin: 8px;
+        }
+        .sec6-Ourtabs .horizontal_tabs_sec .details-item {
+            justify-content: flex-start;
+            overflow: scroll;
         }
         .cards-inner {
             height: 226px;
@@ -1273,5 +1367,173 @@ span.spbottom {
         }
         .learnbook img {
             margin-left: 0;
+            width: 100%;
+        }
+        .banner-content .card {
+            height: auto;
+        }
+        .logo img {
+            width: 100%;
+        }
+        .sec1-banner .navmail i {
+            font-size: 18px;
+        }
+        .joinsbooks img {
+            width: 33%;
+        }
+        span.sptop {
+            width: 290px;
+        }
+        .sec2-Topnotch h3 {
+            font-size: 35px;
+        }
+        .banner-content .card h3 {
+            font-size: 18px;
+            text-align: center;
+        }
+        .banner-content .card h2 {
+            margin-bottom: 0px;
+            font-size: 25px;
+         
+        }
+        .sec7-learn h3 {
+            font-size: 32px;
+        }
+        .footer-inner form {
+            padding: 2.5rem 1rem;
+        }
+        .testi-box {
+            padding: 15px;
+        }
+        
+          
+    }
+
+    @media screen and (max-width:600px) {
+
+
+    }
+    
+    
+
+    @media screen and (max-width:640px) {
+
+        .col-3 {
+            flex: 0 0 100%;
+        }
+        .cards-inner {
+            height: auto;
+        }
+        .plantbooks img {
+            width: 100%;
+        }
+        .plant {
+            position: absolute;
+            right: 126px;
+            bottom: 72px;
+        }
+        .plant img {
+            width: 60%;
+        }
+        
+        .sec2-Topnotch .splide__slide img {
+            width: 85%;
+        }
+        #splide3 .imgBox {
+            width: 50%;
+        }
+        .splide_slide_box {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .emailParent a {
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width:476px) {
+
+        /* .nav-col-4 {
+            flex: 0 0 40%;
+        }
+        .nav-col-6 {
+            flex: 0 0 60%;
+        } */
+        .navcta {
+            flex-wrap: wrap;
+        }
+         .Cta {
+            padding-left: 0 !important;
+            padding-top: 12px;
+        }
+        .sec3-bestseller .navcta :nth-child(2), .sec5-unlock .navcta :nth-child(2) {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        #splide3 .imgBox {
+            width: 100%;
+        }
+        .emailParent a {
+            font-size: 13px;
+        }
+        .sec5-unlock h2 {
+            font-size: 26px;
+        }
+        .sec5-unlock h4 {
+            font-size: 22px;
+        }
+        .sec7-testi h4 {
+            font-size: 20px;
+        }
+        .sec7-testi h3 {
+            font-size: 30px;
+        }
+        .banner-checkicons ul li {
+            display: flex;
+            align-items: baseline;
+        }
+        .banner-heading h1 span {
+            font-size: 40px;
+        }
+        nav .btn {
+            padding: 12px 4px;
+            font-size: 11px;
+        }
+        .banner-heading h1 {
+            font-size: 34px;
+        }
+        .banner-heading h1 .uniqueH1 {
+            font-size: 24px;
+        }
+        .joinsbooks img {
+            width: 42%;
+            bottom: -62px;
+        }
+        .plantsParent .plant  {
+            display: flex;
+            justify-content: center;
+            position: unset;
+            right: unset;
+            bottom: unset;
+        }
+        .plantsParent {
+            display: block;
+        }
+        .plantbooks {
+            margin-top: -133px;
+        }
+        .plant img {
+            width: 100px;
+        }
+        .logo img {
+            width: 215px;
+        }
+    }
+
+    @media screen and (max-width:501px) {
+        .footer-inner input, textarea {
+            width: 75%;
         }
     }

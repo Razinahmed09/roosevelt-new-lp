@@ -17,7 +17,7 @@
         /* Add any custom styles here */
         .splide__slide img {
             display: block;
-            width: 100%;
+            /* width: 100%; */
             height: auto;
         }
     </style>
@@ -32,7 +32,8 @@
                     <div class="row items-center">
                         <div class="nav-col-4">
                             <div class="logo">
-                                <img src="./images/logo.png" alt="">
+                                <a href=""><img src="./images/logo.png" alt=""></a>
+                                
                             </div>
                         </div>
                         <div class="nav-col-6">
@@ -174,7 +175,7 @@
                         <li class="splide__slide"><img src="./images/kobo.png" alt="" class="uniqueW"></li>
                         <li class="splide__slide"><img src="./images/amazon.png" alt="" class="uniqueW"></li>
                         <li class="splide__slide"><img src="./images/google.png" alt=""></li>
-                        <li class="splide__slide"><img src="./images/AliExpress-Logo.png" alt=""></li>
+                        <!-- <li class="splide__slide"><img src="./images/AliExpress-Logo.png" alt=""></li> -->
                     </ul>
                 </div>
             </div>
@@ -780,7 +781,7 @@
                                     <input type="email" placeholder="Enter Email">
                                     <input type="number" placeholder="Your Phome Number">
                                 </div>
-                                <textarea name="" style="height: 25px;" class="Uniqueinput" id="">Message</textarea>
+                                <textarea name="" style="height: 25px;" class="Uniqueinput" id="" placeholder="Message"></textarea>
                             </div>
                             <div class="flex navcta">
                                 <div>
@@ -822,7 +823,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('#splide1', {
                 type: 'loop',
-                perPage: 6,
+                perPage: 5,
                 autoplay: true,
                 pagination: false,
                 breakpoints: {
@@ -837,6 +838,13 @@
             1024: {
               perPage: 3,
              
+            },
+            1200: {
+              perPage: 3,
+             
+            },
+            1400: {
+              perPage: 4,
             },
           },
             }).mount();
@@ -857,7 +865,7 @@
             
                 },
                 1024: {
-                perPage: 3,
+                perPage: 2,
                 
                 },
           },
@@ -877,7 +885,15 @@
                 perPage: 2,
             
                 },
+                991: {
+                perPage: 2,
+            
+                },
                 1024: {
+                perPage: 2,
+                
+                },
+                1200: {
                 perPage: 3,
                 
                 },
