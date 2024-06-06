@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <style>
         /* Add any custom styles here */
-       #splide1 .splide__slide img {
+        #splide1 .splide__slide img {
             display: block;
             width: 70%;
             height: auto;
@@ -25,9 +25,9 @@
 
 <body>
     <header>
-        <section class="sec1-banner">
+        <section class="sec1-banner" id="Home">
             <!-- nav end -->
-            <nav>
+            <nav class="nav-fixed"> 
                 <div class="container">
                     <div class="row items-center">
                         <div class="nav-col-4">
@@ -55,10 +55,172 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12">
+                            <nav class="inner-nav">
+                                <ul class="links">
+                                    <li><a href="#Home">Home</a></li>
+                                    <div class="dropdown">
+                                        <a class="dropbtn">Corporate Writing </a>
+                                        <div class="dropdown-content ">
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Business Plan</a>
+                                                <img src="./images/business-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Business Proposal</a>
+                                                <img src="./images/businessplan-navicon.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- {{-- <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" id="servicesDropdown"
+                                            aria-expanded="false">
+                                            Services
+                                        </a>
+                                        <ul class="dropdown-menu ulcolr" id="servicesDropdownMenu">
+                                            <li><a href="{{ route('term') }}">Term Paper Writing</a></li>
+                                            <li><a href="{{ route('essay') }}">Essay Writing</a></li>
+                                            <li><a href="{{ route('dissertation') }}">Dessertation</a></li>
+                                            <li><a href="{{ route('course') }}">Course Work Writing</a></li>
+                                        </ul>
+                                    </li> --}} -->
+                                    <div class="dropdown">
+                                        <a class="dropbtn">Digital Marketing </a>
+                                        <div class="dropdown-content otherunique">
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">SEO Writing</a>
+                                                <img src="./images/seo-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Social Media Content Creation</a>
+                                                <img src="./images/wikipedia-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Social Media Account Management</a>
+                                                <img src="./images/businessplan-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Logo
+                                                    Design</a>
+                                                <img src="./images/businessplan-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Website Design & Development</a>
+                                                <img src="./images/businessplan-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Website Content Writing</a>
+                                                <img src="./images/businessplan-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Author Website Development</a>
+                                                <img src="./images/businessplan-navicon.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown ">
+                                        <a class="dropbtn"> Other Services</a>
+                                        <div class="dropdown-content otherunique">
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Bio</a>
+                                                <img src="./images/seo-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Resume</a>
+                                                <img src="./images/resume-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Email</a>
+                                                <img src="./images/email-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;"> Pitch Dick</a>
+                                                <img src="./images/flyer-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Audio Book</a>
+                                                <img src="./images/ab-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Book Marketing</a>
+                                                <img src="./images/bm-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Book Publishing</a>
+                                                <img src="./images/whitepaper.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Amazon Book Publishing</a>
+                                                <img src="./images/ep-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Book Promotion</a>
+                                                <img src="./images/grant.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Book Editing</a>
+                                                <img src="./images/businessplan-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Edit & Proof-Reading</a>
+                                                <img src="./images/ep-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Book Formatting</a>
+                                                <img src="./images/grant.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Book Cover</a>
+                                                <img src="./images/web.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Articles</a>
+                                                <img src="./images/article-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Blogs</a>
+                                                <img src="./images/blog-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Ebooks</a>
+                                                <img src="./images/ebook-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Infographics</a>
+                                                <img src="./images/infographic-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Ghost Writing</a>
+                                                <img src="./images/product-des.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Video Script Writing</a>
+                                                <img src="./images/businessplan-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Book Video Trailers</a>
+                                                <img src="./images/video-navicon.png" alt="">
+                                            </div>
+                                            <div class="navinner-drop">
+                                                <a href="javascript:;">Our Success Stories</a>
+                                                <img src="./images/success.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <li><a href="#contactUs">Contact Us</a></li>
+
+                                </ul>
+                                <label for="nav-toggle" class="icon-burger">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </label>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </nav>
-            
+
             <span class="sptop"></span>
             <span class="spbottom"></span>
             <!-- nav end -->
@@ -179,6 +341,14 @@
                     </ul>
                 </div>
             </div>
+
+
+
+
+
+
+
+
         </section>
 
         <!-- slider  -->
@@ -613,49 +783,78 @@
                             <div class="col-3">
                                 <div class="cards-inner">
                                     <h4>1. Initial Consultation</h4>
-                                    <p>Our collaboration starts with thoroughly discussing your vision for the book. This includes understanding your goals, preferences, and expectations. We'll then explore the genre, target audience, and desired tone to ensure that we align our efforts with your vision.</p>
+                                    <p>Our collaboration starts with thoroughly discussing your vision for the book.
+                                        This includes understanding your goals, preferences, and expectations. We'll
+                                        then explore the genre, target audience, and desired tone to ensure that we
+                                        align our efforts with your vision.</p>
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="cards-inner">
                                     <h4>2. Outline Approval</h4>
-                                    <p>Once we understand your requirements clearly, our team will draft an extensive outline for your approval. This outline would be the guideline for the entire project, outlining the structure, key themes, and chapter breakdown. We welcome your feedback and revisions to ensure the outline matches your vision.</p>
+                                    <p>Once we understand your requirements clearly, our team will draft an extensive
+                                        outline for your approval. This outline would be the guideline for the entire
+                                        project, outlining the structure, key themes, and chapter breakdown. We welcome
+                                        your feedback and revisions to ensure the outline matches your vision.</p>
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="cards-inner">
                                     <h4>3. Writing Your Story</h4>
-                                    <p>With the outline approved, our talented writers get to work on bringing your story to life. Using their expertise and creativity, they write engaging prose that captivates readers from the first page to the last. Throughout the writing process, we maintain open communication to address any questions or concerns that may arise.</p>
+                                    <p>With the outline approved, our talented writers get to work on bringing your
+                                        story to life. Using their expertise and creativity, they write engaging prose
+                                        that captivates readers from the first page to the last. Throughout the writing
+                                        process, we maintain open communication to address any questions or concerns
+                                        that may arise.</p>
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="cards-inner">
                                     <h4>4. Editing and Proofreading</h4>
-                                    <p>Once the initial draft is complete, our experienced editors vigilantly review the manuscript for clarity, coherence, and consistency. They ensure that your story flows seamlessly and that the language is perfectly polished. We also conduct thorough proofreading to catch any grammatical errors or typos before proceeding to the next step.</p>
+                                    <p>Once the initial draft is complete, our experienced editors vigilantly review the
+                                        manuscript for clarity, coherence, and consistency. They ensure that your story
+                                        flows seamlessly and that the language is perfectly polished. We also conduct
+                                        thorough proofreading to catch any grammatical errors or typos before proceeding
+                                        to the next step.</p>
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="cards-inner">
                                     <h4>5. Book Formatting</h4>
-                                    <p>With the content finalized, we will format the book for publication. Our team ensures that the layout is professional and visually appealing, optimizing the formatting for both print and digital formats. We pay close attention to details such as font selection, spacing, and alignment to enhance the reader experience.</p>
+                                    <p>With the content finalized, we will format the book for publication. Our team
+                                        ensures that the layout is professional and visually appealing, optimizing the
+                                        formatting for both print and digital formats. We pay close attention to details
+                                        such as font selection, spacing, and alignment to enhance the reader experience.
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="cards-inner">
                                     <h4>6. Book Publishing</h4>
-                                    <p>Once the formatting is complete, we handle the publishing process on your behalf. Whether you choose traditional publishing or self-publishing, we handle all the logistics to ensure a smooth transition from manuscript to published book. We guide you through each step of the publishing process, from ISBN assignment to distribution.</p>
+                                    <p>Once the formatting is complete, we handle the publishing process on your behalf.
+                                        Whether you choose traditional publishing or self-publishing, we handle all the
+                                        logistics to ensure a smooth transition from manuscript to published book. We
+                                        guide you through each step of the publishing process, from ISBN assignment to
+                                        distribution.</p>
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="cards-inner">
                                     <h4>7. Book Marketing</h4>
-                                    <p>After publishing the book, we help you create a customized marketing strategy to promote your work to the widest possible audience. Our marketing experts use various channels, including social media, email marketing, and book launch events, to generate buzz and drive sales.</p>
+                                    <p>After publishing the book, we help you create a customized marketing strategy to
+                                        promote your work to the widest possible audience. Our marketing experts use
+                                        various channels, including social media, email marketing, and book launch
+                                        events, to generate buzz and drive sales.</p>
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="cards-inner">
                                     <h4>8. Designing Covers</h4>
-                                    <p>Finally, we collaborate with talented designers to create eye-catching covers that capture the essence of your book. Our designers work closely with you to develop concepts that reflect your vision and resonate with your target audience. We ensure that the cover design stands out on bookshelves and online platforms, enticing readers to pick up your book.</p>
+                                    <p>Finally, we collaborate with talented designers to create eye-catching covers
+                                        that capture the essence of your book. Our designers work closely with you to
+                                        develop concepts that reflect your vision and resonate with your target
+                                        audience. We ensure that the cover design stands out on bookshelves and online
+                                        platforms, enticing readers to pick up your book.</p>
                                 </div>
                             </div>
 
@@ -679,8 +878,8 @@
             <div class="testi-heading">
                 <h4>We Value Our Customers' Reviews</h4>
                 <h3><span> Hear What </span>Our <br>
-                    Clients Are Saying 
-                    </h3>
+                    Clients Are Saying
+                </h3>
             </div>
             <div id="splide2" class="splide">
                 <div class="splide__track">
@@ -821,7 +1020,7 @@
     <!-- sec-testimonials -->
 
     <!-- footer -->
-    <footer class="sec8-footer">
+    <footer class="sec8-footer" id="contactUs">
         <div class="container">
             <h2>Get In Touch</h2>
             <div class="row">

@@ -89,6 +89,67 @@ ul li, ol li {
 
 
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* backdrop-filter: blur(2px); */
+    background-color: #030047;
+    min-width: 180px;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / .2);
+    z-index: 1;
+    padding: 12px;
+}
+.btN a:hover, .dropdown-content a {
+    color: #fff !important;
+    display: block;
+}
+.dropdown-menu.show, .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .links {
+    display: flex;
+    gap: 20px;
+}
+.dropbtn {
+    cursor: pointer;
+}
+.navinner-drop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+.navinner-drop img {
+    width: 50px;
+}
+.navinner-drop a {
+    font-size: 15px;
+}
+
+.otherunique {
+    height: 350px;
+    overflow: auto;
+}
+.otherunique::-webkit-scrollbar {
+    width: 8px;
+  }
+   
+  .otherunique::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    
+  }
+   
+  .otherunique::-webkit-scrollbar-thumb {
+    background-color: #7e80a2;
+    /* outline: 1px solid #030047; */
+    border-radius: 10px;
+
+  }
 header .sec1-banner {
     background-image: url("../images/banner.png");
     background-size: cover;
@@ -110,6 +171,7 @@ span.sptop {
     width: 320px;
     border-radius: 0 0 380px 0;
     box-shadow: 0px 0px 101px 0px #75bbc1;
+    z-index: 3;
 }
 span.spbottom {
     display: block;
@@ -189,10 +251,24 @@ span.spbottom {
 }
 
 .sec1-banner nav {
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
+    display: flex;
+    justify-content: end;
+    z-index: 1;
 }
 .logo img {
     width: 70%;
+    margin-bottom: -60px;
+}
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: url(../images/banner.png);
+    z-index: 3 !important;
+}
+.banner-content {
+    padding-top: 5rem;
 }
 
 .btn {
@@ -610,7 +686,7 @@ span.spbottom {
     .plant {
         position: absolute;
         right: 96px;
-        bottom: 111px;
+        bottom: 144px;
        
     }
     .plantbooks img {
@@ -640,7 +716,7 @@ span.spbottom {
     
     
     .plantbooks {
-        margin-top: 30px;
+        margin-top: 94px;
     }
     .plantbooks img{
         margin-bottom: -120px;
@@ -1009,9 +1085,6 @@ span.spbottom {
     }
 
 
-    @media screen and (min-width: 1400px) and (max-width: 1600px) {
-        
-    }
     @media screen and (min-width: 1400px) and (max-width: 1900px) {
         header .splide__arrow--next {
             right: 40px !important;
@@ -1020,9 +1093,17 @@ span.spbottom {
             left: 40px !important;
         }
         .cards-inner {
-            height: 277px;
+            padding: 15px 15px;
+            height: auto;
         }
 
+    }
+    
+    @media screen and (min-width: 1400px) and (max-width: 1700px) {
+        .cards-inner {
+            padding: 15px 15px !important;
+            height: 410px !important;
+        }
     }
 
     @media screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -1120,7 +1201,7 @@ span.spbottom {
             width: 100%;
         }
         .cards-inner {
-            height: auto;
+            height: 420px;
         }
         .banner-heading h1 .uniqueH1 {
             font-size: 35px;
@@ -1129,10 +1210,10 @@ span.spbottom {
             bottom: -56px;
         }
         header .splide__arrow--next {
-            right: 85px !important;
+            right: 20px !important;
         }
         header .splide__arrow--prev {
-            left: 60px !important;
+            left: 20px !important;
         }
         .seller-bg h3 {
             font-size: 45px;
@@ -1151,12 +1232,12 @@ span.spbottom {
             /* margin-right: -45px; */
         }
         .plantbooks {
-            margin-top: 100px;
+            margin-top: 170px;
         }
         .plant {
             position: absolute;
             right: 116px;
-            bottom: 107px;
+            bottom: 162px;
         }
         .plantsParent {
             display: flex;
@@ -1199,8 +1280,8 @@ span.spbottom {
             margin-left: 0;
         }
         .cards-inner {
-            height: 260px;
-            padding: 14px 20px;
+            height: 435px;
+            padding: 15px 15px;
         }
         header .splide__arrow--prev {
             left: 60px !important;
@@ -1267,6 +1348,15 @@ span.spbottom {
             right: 210px;
             bottom: 85px;
         }
+        nav .links {
+            gap: 15px;
+        }
+        nav .links a {
+            font-size: 13px;
+        }
+        .banner-content {
+            padding-top: 10rem;
+        }
     }
 
     @media (min-width: 300px) and (max-width: 767px) {
@@ -1282,10 +1372,10 @@ span.spbottom {
             flex: 0 0 50%;
         }
         .nav-col-4 {
-            flex: 0 0 50%;
+            flex: 0 0 40%;
         }
         .nav-col-6 {
-            flex: 0 0 50%;
+            flex: 0 0 60%;
         }
         .sec3-bestseller .nav-col-4 {
             flex: 0 0 100%;
@@ -1321,7 +1411,7 @@ span.spbottom {
         }
         .sec1-banner nav .row {
             align-items: normal;
-            margin-top: -16px;
+            /* margin-top: -16px; */
         }
         .sec1-banner nav .navcta .btn {
             margin-left: 0;
@@ -1378,7 +1468,7 @@ span.spbottom {
             overflow: scroll;
         }
         .cards-inner {
-            height: 226px;
+            height: 430px;
         }
         .learnbook {
             display: flex;
@@ -1424,7 +1514,15 @@ span.spbottom {
         .testi-box {
             padding: 15px;
         }
-        
+        .nav-fixed .col-12 {
+            display: none !important;
+        }
+        .banner-heading h1 span {
+            font-size: 45px;
+        }
+        .banner-content {
+            padding-top: 8rem;
+        }
           
     }
 
@@ -1548,6 +1646,30 @@ span.spbottom {
         }
         .logo img {
             width: 215px;
+        }
+        .sec1-banner .leftnav {
+            display: block;
+            padding-top: 40px;
+        }
+        .sec1-banner .leftnav .flex {
+            justify-content: start;
+        }
+        span.sptop {
+         display: none;
+        }
+        .nav-fixed {
+            position: unset;
+            background-image: unset;
+        }
+        .banner-content {
+            padding-top: 0;
+        }
+        .sec1-banner nav .row {
+            margin-top: -54px;
+        }
+        .container-fluid .row {
+            padding: 0rem;
+            
         }
     }
 
