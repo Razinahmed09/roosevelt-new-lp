@@ -103,6 +103,7 @@ ul li, ol li {
     z-index: 1;
     padding: 12px;
 }
+
 .btN a:hover, .dropdown-content a {
     color: #fff !important;
     display: block;
@@ -1670,6 +1671,12 @@ span.spbottom {
         .container-fluid .row {
             padding: 0rem;
             
+        }
+        header .splide__arrow--next {
+            right: 20px !important;
+        }
+        header .splide__arrow--prev {
+            left: 20px !important;
         }
     }
 
