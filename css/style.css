@@ -127,6 +127,7 @@ nav .links {
 }
 .navinner-drop img {
     width: 50px;
+    display: none;
 }
 .navinner-drop a {
     font-size: 15px;
