@@ -212,6 +212,7 @@ span.spbottom {
 }
 .nav-col-6 {
     flex: 0 0 60%;
+    overflow: hidden;
 }
 
 .col-2 {
@@ -515,10 +516,16 @@ span.spbottom {
   /* .splide__slide img {
     width: 130px;
   } */
+
   .splide__slide {
     display: flex;
     justify-content: center;
   }
+
+  #splide4 .splide__slide {
+    padding: 15px !important;
+  }
+
   header section.splide {
     padding: 3.4rem 0;
   }
@@ -914,7 +921,8 @@ span.spbottom {
      .cards-inner {
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         padding: 15px 30px;
-        height: 315px;
+        height: auto;
+        width: auto;
 
      }
      .cards-inner p {
@@ -1101,13 +1109,6 @@ span.spbottom {
 
     }
     
-    @media screen and (min-width: 1400px) and (max-width: 1700px) {
-        .cards-inner {
-            padding: 15px 15px !important;
-            height: 410px !important;
-        }
-    }
-
     @media screen and (min-width: 1200px) and (max-width: 1400px) {
         .container {
             max-width: 1140px;
@@ -1202,9 +1203,6 @@ span.spbottom {
             margin-left: 0;
             width: 100%;
         }
-        .cards-inner {
-            height: 420px;
-        }
         .banner-heading h1 .uniqueH1 {
             font-size: 35px;
         }
@@ -1282,7 +1280,6 @@ span.spbottom {
             margin-left: 0;
         }
         .cards-inner {
-            height: 435px;
             padding: 15px 15px;
         }
         header .splide__arrow--prev {
@@ -1469,9 +1466,7 @@ span.spbottom {
             justify-content: flex-start;
             overflow: scroll;
         }
-        .cards-inner {
-            height: 430px;
-        }
+
         .learnbook {
             display: flex;
             justify-content: center;
@@ -1678,6 +1673,9 @@ span.spbottom {
         }
         header .splide__arrow--prev {
             left: 20px !important;
+        }
+        #splide1 .splide__slide img {
+            width: 50% !important;
         }
     }
 
