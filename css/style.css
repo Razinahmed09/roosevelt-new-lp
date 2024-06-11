@@ -197,7 +197,7 @@ span.spbottom {
     /* margin: 0 2rem; */
 }
 .container-fluid .row {
-    padding: 0 1rem ;
+    padding: 0 4rem;
     align-items: center;
 }
 
@@ -240,6 +240,12 @@ span.spbottom {
     flex: 0 0 30%;
 }
 
+.sec7-learn .nav-col-4 {
+    flex: 0 0 30%;
+}
+.sec7-learn .nav-col-6 {
+    flex: 0 0 70%;
+}
 .col-2,.col-3,.col-4,.col-5,.col-12,.col-8,.nav-col-4,.nav-col-6,.unique_col_7,.unique_col_3{
     padding: 15px;
     box-sizing: border-box;
@@ -371,12 +377,12 @@ span.spbottom {
    }
 
    .banner-heading h1 {
-    font-family:OpenSansSemi ;
+    font-family: 'PoppinsRegural';
     font-size: 55px;
     line-height: 1.2;
    }
    .banner-heading h1 .uniqueH1 {
-    font-family:OpenSansSemi ;
+    font-family: 'OpenSansLight';
     font-size: 40px;
     color: black;
    }
@@ -548,6 +554,7 @@ span.spbottom {
     }
     .sec2-Topnotch .splide__slide img {
         width: 100%;
+        height: 600px;
     }
     #splide3 .imgBox {
         background: white;
@@ -915,6 +922,9 @@ span.spbottom {
     .sec7-learn h3 span{
         color: #7e80a2;
      }
+     .sec7-learn .row {
+        align-items: end;
+     }
     .sec7-learn h3 {
         font-size: 45px;
      }
@@ -934,12 +944,17 @@ span.spbottom {
         padding: 10px 0;
         font-family: PoppinsBold;
      }
+     .learnbook {
+        display: flex;
+        justify-content: end;
+     }
      .learn-content {
-        padding-left: 2rem;
+        padding-left: 1rem;
      }
      .learnbook img {
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-        margin-left: 60px;
+        /* margin-right: 16px; */
+        width: 85%;
      }
 
      /* sec7-testi */
@@ -1121,7 +1136,12 @@ span.spbottom {
         .nav-col-6 {
             flex: 0 0 60%;
         }
-        
+        .sec7-learn .nav-col-4 {
+            flex: 0 0 30%;
+        }
+        .sec7-learn .nav-col-6 {
+            flex: 0 0 70%;
+        }
         .col-2 {
             flex: 0 0 50%;
         }
@@ -1135,9 +1155,7 @@ span.spbottom {
         .banner-heading h1 {
             font-size: 50px;
         }
-        .sec4-about .row2 {
-            margin-top: -78px;
-        }
+       
         .banner-content .row {
             padding: 3rem 0 4rem 0;
         }
@@ -1145,17 +1163,25 @@ span.spbottom {
             padding: 0;
             align-items: center;
         }
+        .sec7-learn .row {
+            align-items: end;
+        }
         .learn-content {
             padding-left: 1rem;
         }
         .learnbook img {
-            margin-left: 0;
+            margin-right: 14px;
+            width: 100%;
         }
         header .splide__arrow--next {
             right: 40px !important;
         }
         header .splide__arrow--prev {
             left: 40px !important;
+        }
+        .sec2-Topnotch .splide__slide img {
+            width: 100%;
+            height: 370px;
         }
     }
 
@@ -1195,13 +1221,17 @@ span.spbottom {
         .container-fluid .row {
             padding: 0;
             align-items: center;
-        }
+            }
+         .sec7-learn .row {
+            align-items: end;
+         }
         .learn-content {
             padding-left: 1rem;
         }
         .learnbook img {
             margin-left: 0;
             width: 100%;
+            margin-right: 14px;
         }
         .banner-heading h1 .uniqueH1 {
             font-size: 35px;
@@ -1221,9 +1251,7 @@ span.spbottom {
         .sec4-about .row {
             align-items: center;
         }
-        .sec4-about .row2 {
-            margin-top: -140px;
-        }
+        
         .sec6-Ourtabs .horizontal_tabs_sec .tablinks {
             padding: 10px 28px;
         }
@@ -1243,7 +1271,10 @@ span.spbottom {
             display: flex;
             justify-content: center;
         }
-
+        .sec2-Topnotch .splide__slide img {
+            width: 100%;
+            height: 370px;
+        }
     }
 
     @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -1275,6 +1306,9 @@ span.spbottom {
         .learnbook {
             display: flex;
             justify-content: center;
+        }
+        .learnbook img {
+            width: 50%;
         }
         .learnbook img {
             margin-left: 0;
@@ -1355,6 +1389,10 @@ span.spbottom {
         }
         .banner-content {
             padding-top: 10rem;
+        }
+        .sec2-Topnotch .splide__slide img {
+            width: 100%;
+            height: 430px;
         }
     }
 
@@ -1473,7 +1511,8 @@ span.spbottom {
         }
         .learnbook img {
             margin-left: 0;
-            width: 100%;
+            width: 60%;
+            
         }
         .banner-content .card {
             height: auto;
@@ -1520,7 +1559,10 @@ span.spbottom {
         .banner-content {
             padding-top: 8rem;
         }
-          
+        .sec2-Topnotch .splide__slide img {
+            width: 100%;
+            height: 430px;
+        }
     }
 
     @media screen and (max-width:600px) {
@@ -1676,6 +1718,12 @@ span.spbottom {
         }
         #splide1 .splide__slide img {
             width: 50% !important;
+        }
+        .sec1-banner .nav-col-4 {
+            flex: 0 0 20%;
+        }
+        .sec1-banner .nav-col-6 {
+            flex: 0 0 80%;
         }
     }
 
