@@ -1030,6 +1030,7 @@ span.spbottom {
         font-style: italic;
         color: black;
         text-align: left;
+        height: 130px;
     }
      /* sec7-testi */
 
@@ -1121,7 +1122,9 @@ span.spbottom {
             padding: 15px 15px;
             height: auto;
         }
-
+        .sec7-testi .item>p {
+            height: 200px;
+        }
     }
     
     @media screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -1182,6 +1185,9 @@ span.spbottom {
         .sec2-Topnotch .splide__slide img {
             width: 100%;
             height: 370px;
+        }
+        .sec7-testi .item>p {
+            height: 240px;
         }
     }
 
@@ -1274,6 +1280,9 @@ span.spbottom {
         .sec2-Topnotch .splide__slide img {
             width: 100%;
             height: 370px;
+        }
+        .sec7-testi .item>p {
+            height: 290px;
         }
     }
 
@@ -1393,6 +1402,9 @@ span.spbottom {
         .sec2-Topnotch .splide__slide img {
             width: 100%;
             height: 430px;
+        }
+        .sec7-testi .item>p {
+            height: 260px;
         }
     }
 
